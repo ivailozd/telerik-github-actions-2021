@@ -4,7 +4,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "This has been triggered ${{ github.event_name }}" event
+      - run: echo "This has been triggered ${{ github.event_name }} event"
       - run: echo "This job is running on ${{ runner.os }}"
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -14,7 +14,7 @@ jobs:
           python-version: 3.9
       - name: Install dependencies
         run: |
-          python –m pip install –upgrade pip
+          python -m pip install --upgrade pip
           pip install pylint
       - name: Lint with pylint
         run: |
