@@ -1,6 +1,6 @@
 name: Deployment-of-python-app
 on:
-  pull_request:
+  push:
     paths:
       - '**.py'
 jobs:
