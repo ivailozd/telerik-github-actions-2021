@@ -1,8 +1,5 @@
 name: Deployment-of-python-app
-on:
-  push:
-    paths:
-      - '**.py'
+on: [push]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -27,7 +24,3 @@ jobs:
           echo "Building..."
           sleep 10
       - run: echo "Done!"
-  hello-actions:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/hello-actions@main
