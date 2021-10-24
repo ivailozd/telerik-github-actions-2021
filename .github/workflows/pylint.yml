@@ -30,4 +30,4 @@ jobs:
   hello-actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/workflows/hello-actions
+      - uses: ./.github/workflows/hello-actions.ylm
