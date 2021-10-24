@@ -30,4 +30,4 @@ jobs:
   hello-actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: hello-actions@v1
+      - uses: actions/hello-actions@main
