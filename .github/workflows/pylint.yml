@@ -27,7 +27,7 @@ jobs:
           echo "Building..."
           sleep 10
       - run: echo "Done!"
-  hello-actions:
+  static-code-checks:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/workflows/hello-actions.ylm
+      - run: echo "Have you written tests for the new code?"
